@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-MY">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=devices-width, initial-scale=1.0">
+    <title>About Us - Beacon Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="beacon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@100&family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+
+<!-------------header--------------->
+
+<div class="header">
+    <div class="sidenav">
+        <div class="logo">
+            <a href="index.html"><img src="images/icon/logo1.png" alt="logo" width="170px"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="fees.html">Delivery Info</a></li>
+                <li><a href="about.html">About <span>♥</span></a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a class="cart-icon" href="cart.html"><img src="images/icon/cart.png" alt="cart" width="30px" height="30px" title="Shopping Cart"></a></li>
+                <li><img src="images/icon/musicplay.png" alt="musicplay" id="icon" title="Background Music"></li>
+            </ul>
+        </nav>
+        <audio src="music/backgroundMusic.mp3" type="audio/mp3" id="mySong" autoplay="true" loop="true"></audio>
+    </div>
+</div>
+
+<div id="main">
+<!-----------------about page----------------------->
+<div class="container">
+    <div class="page-title">
+        <h2>About Us</h2>
+    </div>
+    <div class="row about">      
+        <div class="col-2">
+            <p>Beacon Bookstore established in August 2021.</p><br><br>
+            <p style="text-indent: 3em;">Bookstores are special places, full of the smell of new books, browsing the 
+                shelves for your next great read, booksellers you know you can 
+                count on for great, personal recommendations, a community you 
+                know will be open and welcoming. Booksellers help readers discover 
+                and share the magic of books.
+            </p>
+        </div>
+        <div class="col-2">
+            <img src="images/background/about.jpg" alt="about">
+        </div>
+    </div>
+    <center class="video">
+        <h1> I ♥ Beacon </h1><br>
+        <iframe width="800" height="500" src="https://www.youtube.com/embed/RD5z69GfS_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center>   
+
+</div>
+<!-- -------------footer--------------- -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                    <h5>135, Jln Masjid Negeri, Taman Guan Joo Seng,</h5>
+                    <p>11600 George Town, Pulau Pinang, Malaysia.</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                    <h5>+60 12345678</h5>
+                    <p>Monday to Saturday, 10AM to 10PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>
+                    <h5><a href="mailto:beaconbookstore@yahoo.com">beaconbookstore@yahoo.com</a></h5>
+                    <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <a href="index.html"><img src="images/icon/logo1.png" alt="logo" class="logo"></a>
+                <p>Our goal is to make the pleasure and benefits of reading available to as many people as possible in the long term.
+                </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Link</h3>
+                <ul>                           
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="fees.html">Delivery Info</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>                             
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <div class="icons">
+                    <a href="https://www.facebook.com/Beacon-Bookstore-102249678923366"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/BookstoreBeacon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/beacon_bookstore/"><i class="fab fa-instagram"></i></a>                    
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">2021 © Beacon Sdn. Bhd</p>
+    </div>
+</div>
+</div>
+
+<!-- -------------js for background music--------------- -->
+<script>
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){      
+        if(mySong.paused){
+            mySong.play();
+            icon.src = "images/icon/musicplay.png";
+        }
+        else{
+            mySong.pause();
+            icon.src = "images/icon/musicpause.png";
+        }
+    }
+</script>
+</body>
+</html>

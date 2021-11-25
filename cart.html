@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-MY">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=devices-width, initial-scale=1.0">
+    <title>Shopping Cart - Beacon Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="beacon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@100&family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+
+<!-------------header--------------->
+
+<div class="header">
+    <div class="navbar sidenav">
+        <div class="logo">
+            <a href="index.html"><img src="images/icon/logo1.png" alt="logo" width="170px"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="fees.html">Delivery Info</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a class="cart-icon" href="cart.html"><img src="images/icon/cart.png" alt="cart" width="30px" height="30px" title="Shopping Cart"></a></li>
+                <li><img src="images/icon/musicplay.png" alt="musicplay" id="icon" title="Background Music"></li>
+            </ul>
+        </nav>
+        <audio src="music/backgroundMusic.mp3" type="audio/mp3" id="mySong" autoplay="true" loop="true"></audio>
+    </div>
+</div>
+
+<div id="main">
+<!-- -------------shopping cart page--------------- -->
+<div class="small-container cart-page">
+    <div class="page-title">
+        <h2>Shopping Cart</h2>
+    </div>
+    <div class="cart-table">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/books/book12.jpg" alt="buy-1">
+                        <div>
+                            <p>Beauty and The Beasts</p>
+                            <small>Price: RM 61.50</small><br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" min="1"></td>
+                <td>RM 61.50</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/books/book23.jpg" alt="buy-1">
+                        <div>
+                            <p>The Tale of Peter Rabbit</p>
+                            <small>Price: RM 20.05</small><br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>               
+                <td><input type="number" value="1" min="1"></td>
+                <td>RM 20.05</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/books/book20.jpg" alt="buy-1">
+                        <div>
+                            <p>Danny and The Dinosaur</p>
+                            <small>Price: RM 22.83</small><br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" min="1"></td>
+                <td>RM 22.83</td>
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>RM 178.69</td>
+                </tr>
+                <tr>
+                    <td>Delivery Fees</td>
+                    <td>RM 7.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>RM 10.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>RM 195.69</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- -------------footer--------------- -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                    <h5>135, Jln Masjid Negeri, Taman Guan Joo Seng,</h5>
+                    <p>11600 George Town, Pulau Pinang, Malaysia.</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                    <h5>+60 12345678</h5>
+                    <p>Monday to Saturday, 10AM to 10PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>
+                        <h5><a href="mailto:beaconbookstore@yahoo.com">beaconbookstore@yahoo.com</a></h5>
+                    <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <a href="index.html"><img src="images/icon/logo1.png" alt="logo" class="logo"></a>
+                <p>Our goal is to make the pleasure and benefits of reading available to as many people as possible in the long term.
+                </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Link</h3>
+                <ul>                           
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="fees.html">Delivery Info</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>                              
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <div class="icons">
+                    <a href="https://www.facebook.com/Beacon-Bookstore-102249678923366"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/BookstoreBeacon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/beacon_bookstore/"><i class="fab fa-instagram"></i></a>                    
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">2021 © Beacon Sdn. Bhd</p>
+    </div>
+</div>
+</div>
+
+<!-- -------------js for background music--------------- -->
+<script>
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){      
+        if(mySong.paused){
+            mySong.play();
+            icon.src = "images/icon/musicplay.png";
+        }
+        else{
+            mySong.pause();
+            icon.src = "images/icon/musicpause.png";
+        }
+    }
+</script>
+
+</body>
+</html>
