@@ -1,4 +1,4 @@
-
+/*--------------header-----------------*/
 .text-box{
     width: 90%;
     color: #fff;
@@ -9,15 +9,15 @@
     text-align: center;
 }
 .text-box h1{
-    /* font-size: 210px;    */
     font-size: 13em;
 } 
 .text-box p{
-    margin: 10px 0 20px;/*top/left tight/bottom*/
+    margin: 10px 0 20px;
     font-size: 22px;    
     color: #e2daa8;
 }
-/*button setting-contact us*/
+
+/*--------------button setting-----------------*/
 .hero-btn{ 
     display: inline-block;
     text-decoration: none;
@@ -35,29 +35,15 @@
     color: #fff;
     transition: 1s;
 }
-/* .logo:hover, .navbar img, .icons a:hover, .navbar a:hover{
-    opacity: 70%;
-} */
-/* .books{
-    padding-top: 50px;
-    padding-bottom: 50px;
-} */
+
+/*--------------navbar-----------------*/
 .logo:hover, .icons a:hover{
     opacity: 70%;
     transition: 0.5s;
-    
 }
 .logo{
     padding: 15px;
 }
-
-
-/* 
-main{
-    padding: 0 0 2em 0em;
-    margin-left: 200px;
-    background-color: #fef6c2;
-} */
 .sidenav {
     height: 100%;  
     width: 200px;
@@ -69,50 +55,19 @@ main{
     overflow-x: hidden;
     padding-top: 20px;
 }
-
-
-  /* Main content */
-/* #main{   
-    margin-left: 200px;
-    min-width: 1100px;
-    max-width: 100%;
-} */
-#main{   
-    margin-left: 200px;
-    margin-right: auto;
-    min-width: 500px;
-    
-    max-width: 100%;
-}
-/* .sidenav img{
-    margin:20px 20px;
-} */
-
 nav li{
-    /* padding: 20px 20px; */
-    /* background-color: red; */
-
-
-    /* background-color: blue; */
     width: 190px;
     height: 60px;
     padding:  20px 0 0 20px;
-    
-    
-    /* border: 2px solid yellow; */
     overflow: hidden;
 }
 nav a{
     text-decoration: none;
-    font-size: 1.2em;
-    
-
-    
+    font-size: 1.2em;   
 }
 nav a span{
     font-size: 1.1em;
     color: rgb(255, 226, 226);
-    
 }
 nav a:link{
     color: #fffadb;
@@ -124,8 +79,6 @@ nav a:hover{
     color: #f74a4a;
     font-size: 1.34em;
     transition: 0.2s;
-    
-
 }
 nav ul{
     list-style-type: none;
@@ -135,7 +88,6 @@ nav ul{
 #icon{
     width: 32px;
     cursor: pointer;
-    /* margin-top: 130px; */
     bottom: 10%;
 }
 #icon:hover, .cart-icon img:hover{
@@ -177,21 +129,7 @@ nav ul{
     .account-page{
         max-height: 950px;
     }
-    /* .cart-info{
-        display: none;
-        width: 500px;
-        background-color: red;
-    } */
 } 
-    /* .text-box h1{
-        text-align: center;
-        font-size: 60px;
-    }
-    .title::after{
-        font-size: 0.1em;
-    } */
-    
-
 @media only screen and (max-width: 1130px){
     .contact-col{
         flex-basis: 100%;
@@ -202,14 +140,4 @@ nav ul{
     .page-title p{
         padding-right: 20px;
     }
-
 }
-/*
-900 @media only screen and (max-width: 1100px){
-    .contact-col{
-        flex-basis: 100%;
-    }
-    .text-box h1{
-        font-size: 7em;
-    }
-} */
