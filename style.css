@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
     font-family: 'Fraunces', serif;
     font-family: 'Merienda', cursive;
 }
@@ -19,6 +18,12 @@ body{
 
 
 /* --------------------------------------HOME PAGE------------------------------------------------ */
+#main{   
+    margin-left: 200px;
+    margin-right: auto;
+    min-width: 500px;
+    max-width: 100%;
+}
 .home{
     min-height: 100vh;
     width: 100%;
